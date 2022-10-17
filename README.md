@@ -2,7 +2,7 @@ This is a small project I did as a postdoc at UCLA QuBiT lab.
 
 Here I describe how to set up a humidity-temperature sensor that displays and plots the data online and sends an email alert when the values excede a certain range.  You can make it so anyone with a link can see the data, which, for two sensors, looks something like this:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1dfa24a4-7325-434e-9560-fb8cbd97ea9b/Untitled.png)
+![Fig. 0](fig0.png)
 
 We use a controller and a sensor from adafruit, and a free adafruit account is required.
 
@@ -15,7 +15,7 @@ We are using a sensor driven by a microcontroller with an integrated wifi module
 Here is the [list of parts](http://www.adafruit.com/wishlists/555475). Note that the board needs to be powered via USB-C cable (not included in the list but is available on the webpage). Depending on the availability, different models of the board and the sensor might be used, e.g., we had to use a bit pricier [Si7021](https://www.adafruit.com/product/3251) because the other sensor was not available. Check supported devices at [https://io.adafruit.com/wippersnapper](https://io.adafruit.com/wippersnapper) (you should be loged in with your adafruit account).
 .
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/465fd64a-c819-4784-82c5-4e6b19fa7718/Untitled.png)
+![Fig. 1](fig1.png)
 
 ---
 
@@ -29,17 +29,16 @@ To activate WipperSnapper (it is online and is not installed locally), follow [t
 
 When it asks to generate a json file, use the parameters of your WIFI (it has to be @ 2.4 GHz) 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/014a8514-265c-44d6-9286-27a4d57c3ae9/Untitled.png)
-
+![Fig. 2](fig2.png)
 # Email alerts
 
 Email alerts can be set up on the “Actions” page. Everything is straightforward. 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/463bd94c-4da5-41fb-9065-5417c76dbc24/Untitled.png)
+![Fig. 3](fig3.png)
 
 For a free account, only a single email can receive alerts. So we set it up so the alert is sent to the lab email, from where it is forwarded to all lab members. The email looks like this:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90ccbd27-97c1-41d1-867c-9c575faf3ee5/Untitled.png)
+![Fig. 4](fig4.png)
 
 # Upgrades
 
